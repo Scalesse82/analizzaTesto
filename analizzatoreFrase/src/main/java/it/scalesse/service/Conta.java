@@ -20,7 +20,7 @@ public class Conta {
 	public static int contaConsonanti(String frase) {
 		
 		
-		return frase.length()-contaVocali(frase);
+		return frase.toLowerCase().replaceAll(" ", "").length()-contaVocali(frase);
 		
 	}
 
